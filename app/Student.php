@@ -8,6 +8,6 @@ class Student extends Model
 {
     //
     public function getAllStudents() {
-      return ['sure', 'thing']
+      return ['sure', 'thing'];
     }
 }
