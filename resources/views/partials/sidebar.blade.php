@@ -7,8 +7,8 @@ Tip 2: you can change the color of the active button using the data-active-color
 
   <div class="sidebar-wrapper">
         <div class="logo">
-            <a href="http://www.creative-tim.com" class="simple-text">
-                Creative Tim
+            <a href="{{ url('/dashboard') }}" class="simple-text">
+                {{ config('app.name', 'MWG Code Academy') }}
             </a>
         </div>
 

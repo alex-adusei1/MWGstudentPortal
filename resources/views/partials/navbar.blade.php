@@ -8,7 +8,7 @@
                 <span class="icon-bar bar3"></span>
             </button>
             <a class="navbar-brand" href="{{ url('/') }}">
-              {{ config('app.name', 'Dashboard') }}
+              Dashboard
             </a>
         </div>
         <div class="collapse navbar-collapse">
