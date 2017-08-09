@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,7 +6,7 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>MWG Code Academy</title>
+	<title>{{ config('app.name', 'MWG Code Academy')}}</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -26,6 +25,8 @@
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="assets/css/demo.css" rel="stylesheet" />
 
+		<link href="assets/css/app.css" rel="stylesheet" />
+
 
     <!--  Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
@@ -35,17 +36,17 @@
 </head>
 <body>
 
-<div class="wrapper">
-    @extends('partials.sidebar')
+<div class="wrapper" id="app">
+    @include('partials.sidebar')
 
     <div class="main-panel">
-        @extends('partials.navbar')
+        @include('partials.navbar')
 
 
         @yield('content')
 
 
-        @extends('partials.footer')
+        @include('partials.footer')
 
     </div>
 </div>
@@ -75,7 +76,7 @@
 	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
 
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
     	$(document).ready(function(){
 
         	demo.initChartist();
@@ -90,6 +91,6 @@
             });
 
     	});
-	</script>
+	</script> -->
 
 </html>
