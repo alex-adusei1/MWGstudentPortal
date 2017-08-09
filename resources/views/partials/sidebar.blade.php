@@ -14,13 +14,13 @@ Tip 2: you can change the color of the active button using the data-active-color
 
         <ul class="nav">
             <li class="active">
-                <a href="dashboard.html">
+                <a href="/dashboard">
                     <i class="ti-panel"></i>
                     <p>Dashboard</p>
                 </a>
             </li>
             <li>
-                <a href="user.html">
+                <a href="{{ url('/user' ) }}">
                     <i class="ti-user"></i>
                     <p>User Profile</p>
                 </a>
