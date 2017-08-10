@@ -19,11 +19,26 @@ Tip 2: you can change the color of the active button using the data-active-color
                     <p>Dashboard</p>
                 </a>
             </li>
-            <li>
+            <li class="dropdown">
                 <a href="{{ url('/user' ) }}">
                     <i class="ti-user"></i>
-                    <p>User Profile</p>
+                    <p>Student</p>
                 </a>
+
+            </li>
+            <li class="dropdown">
+                <a href="{{ url('/user' ) }}">
+                    <i class="ti-user"></i>
+                    <p>Teacher</p>
+                </a>
+
+            </li>
+            <li class="dropdown">
+                <a href="{{ url('/user' ) }}">
+                    <i class="ti-user"></i>
+                    <p>Guardian</p>
+                </a>
+
             </li>
             <li>
                 <a href="table.html">

@@ -7,8 +7,8 @@
                 <span class="icon-bar bar2"></span>
                 <span class="icon-bar bar3"></span>
             </button>
-            <a class="navbar-brand" href="{{ url('/') }}">
-              Dashboard
+            <a class="navbar-brand" href="{{ url('/dashboard') }}">
+              Dashboard <!-- should be dynamic -->
             </a>
         </div>
         <div class="collapse navbar-collapse">
@@ -34,31 +34,6 @@
                       </ul>
                 </li>
 
-                  <!-- <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-settings"></i>
-                        <p>Settings</p>
-                          <b class="caret"></b>
-                    </a>
-
-                    <ul class="dropdown-menu" role="menu">
-                      <li>
-                        <a href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
-                                     document.getElementById('logout-form').submit();">
-                            Logout
-                        </a>
-
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            {{ csrf_field() }}
-                        </form>
-                      </li>
-                      <li><a href="#">Notification 2</a></li>
-                      <li><a href="#">Notification 3</a></li>
-                      <li><a href="#">Notification 4</a></li>
-                      <li><a href="#">Another notification</a></li>
-                    </ul>
-                </li> -->
-
                 <!-- Authentication Links -->
                 @if (Auth::guest())
                     <li><a href="{{ route('login') }}">Login</a></li>
@@ -70,9 +45,10 @@
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Settings</a></li>
-                            <li><a href="#">Edit Profile</a></li>
+
+                            <li><a href="{{ url('/user' ) }}">User Profile</a></li>
                             <li><a href="#">Check Stats</a></li>
+                            <li><a href="#">Settings</a></li>
                             <li>
                                 <a href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
