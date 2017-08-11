@@ -355,7 +355,7 @@ Tip 2: you can change the color of the active button using the data-active-color
 								</a>
 						</li> -->
 <!-- System Settings -->
-		<li>
+		<!-- <li>
 			<a data-toggle="collapse" href="#pagesExamples">
 										<i class="ti-gift"></i>
 										<p>
@@ -397,7 +397,7 @@ Tip 2: you can change the color of the active button using the data-active-color
 					</li>
 										</ul>
 								</div>
-						</li>
+						</li> -->
 						<!-- End System Settings -->
 				</ul>
 	</div>

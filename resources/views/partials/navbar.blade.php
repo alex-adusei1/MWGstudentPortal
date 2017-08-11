@@ -79,11 +79,10 @@
                     <ul class="dropdown-menu nav" role="menu">
 
                         <li><a href="#">Institution Profile</a></li>
-                        <li><a href="#">Edit Institution</a></li>
-                        <li><a href="#">Settings</a></li>
-
-
-
+                        <!-- <li><a href="#">Edit Institution</a></li> -->
+                        <li><a href="#">Add Admin User</a></li>
+                        <li><a href="#">Remove Admin</a></li>
+                        <li><a href="#">Assign Role</a></li>
                     </ul>
                   </li>
                 </ul>
