@@ -20,3 +20,9 @@ Vue.component('example', require('./components/Example.vue'));
 const app = new Vue({
     el: '#app'
 });
+
+Vue.component('bootstrap-table', require('./components/bootstrap-table.vue'));
+
+const app = new Vue({
+    el: '#app'
+});
