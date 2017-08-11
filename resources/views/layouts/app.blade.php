@@ -21,6 +21,9 @@
      <!-- Bootstrap core CSS     -->
     <link href="{{asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" />
 
+    <!-- Custom CSS     -->
+    <link href="{{asset('assets/css/main.css') }}" rel="stylesheet" />
+    
     <!--  Paper Dashboard core CSS    -->
     <link href="{{asset('assets/css/paper-dashboard-v=1.2.1.css')}}" rel="stylesheet"/>
 

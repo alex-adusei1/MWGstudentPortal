@@ -39,16 +39,16 @@
                                 </div>
                                 <div class="card-footer text-center">
 
-                                    <div class="checkbox">
+<!--                                    <div class="checkbox">
                                       <label>
                                           <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
                                       </label>
-                                    </div>
+                                    </div>-->
 
-                                    <button type="submit" class="btn btn-fill btn-wd ">Let's go</button>
-                                    <div class="forgot">
+<button type="submit" class="btn btn-fill btn-wd">Login <i class="fa fa-gear"></i></button>
+<!--                                    <div class="forgot">
                                         <a href="{{ route('password.request') }}">Forgot your password?</a>
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
                         </form>
