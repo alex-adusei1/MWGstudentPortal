@@ -28,3 +28,33 @@ Route::get('/academic/class', 'PagesController@class')->name('class');
 Route::get('/academic/term', 'PagesController@term')->name('term');
 Route::get('/academic/promote-student', 'PagesController@promoteStudent')->name('promote-student');
 Route::get('/academic/allocate-teacher', 'PagesController@allocateTeacher')->name('allocate-teacher');
+
+Route::prefix('student')->group(function(){
+  Route::get('/overview', 'PagesController@overviewStudent');
+  Route::get('/add', 'PagesController@addStudent');
+  Route::get('/edit', 'PagesController@editStudent');
+  Route::get('/remove', 'PagesController@removeStudent');
+  Route::get('/assign', 'PagesController@assignStudent');
+
+
+});
+
+Route::prefix('teacher')->group(function(){
+  Route::get('/overview', 'PagesController@overviewTeacher');
+  Route::get('/add', 'PagesController@addTeacher');
+  Route::get('/edit', 'PagesController@editTeacher');
+  Route::get('/remove', 'PagesController@removeTeacher');
+  Route::get('/assign', 'PagesController@assignTeacher');
+
+
+});
+
+Route::prefix('guardian')->group(function(){
+  Route::get('/overview', 'PagesController@overviewGuardian');
+  Route::get('/add', 'PagesController@addGuardian');
+  Route::get('/edit', 'PagesController@editGuardian');
+  Route::get('/remove', 'PagesController@removeGuardian');
+  Route::get('/assign', 'PagesController@assignGuardian');
+
+
+});

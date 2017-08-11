@@ -103,26 +103,26 @@ Tip 2: you can change the color of the active button using the data-active-color
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="{{ url('/academic/class')}}">
 							<span class="sidebar-mini">C&C</span>
 							<span class="sidebar-normal">Class & Course</span>
 						</a>
 					</li>
 												<li>
-						<a href="#">
+						<a href="{{ url('/academic/term')}}">
 							<span class="sidebar-mini">T</span>
 							<span class="sidebar-normal">Term</span>
 						</a>
 					</li>
 												<li>
-						<a href="#">
+						<a href="{{ url('/academic/promote-student')}}">
 							<span class="sidebar-mini">PS</span>
 							<span class="sidebar-normal">Promote Student</span>
 						</a>
 					</li>
 
 					<li>
-						<a href="#">
+						<a href="{{ url('/academic/allocate-teacher')}}">
 						<span class="sidebar-mini">TA</span>
 						<span class="sidebar-normal">Teacher Allocation</span>
 						</a>
@@ -164,25 +164,31 @@ Tip 2: you can change the color of the active button using the data-active-color
 								<div class="collapse" id="formsExamples">
 				<ul class="nav">
 					<li>
-						<a href="#">
+						<a href="{{ url('/student/overview')}}">
+							<span class="sidebar-mini">SO</span>
+							<span class="sidebar-normal">Overview</span>
+						</a>
+					</li>
+					<li>
+						<a href="{{ url('/student/add')}}">
 							<span class="sidebar-mini">AS</span>
 							<span class="sidebar-normal">Add Student</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="{{ url('/student/edit')}}">
 							<span class="sidebar-mini">ES</span>
 							<span class="sidebar-normal">Edit Student</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="{{ url('/student/remove')}}">
 							<span class="sidebar-mini">RS</span>
 							<span class="sidebar-normal">Remove Student</span>
 						</a>
 					</li>
 												<li>
-						<a href="#">
+						<a href="{{ url('/student/assign')}}">
 							<span class="sidebar-mini">AC</span>
 							<span class="sidebar-normal">Assign Class</span>
 						</a>
@@ -204,25 +210,31 @@ Tip 2: you can change the color of the active button using the data-active-color
 								<div class="collapse" id="tablesExamples">
 									<ul class="nav">
 										<li>
-											<a href="#">
+											<a href="{{ url('/teacher/overview')}}">
+												<span class="sidebar-mini">TO</span>
+												<span class="sidebar-normal">Overview</span>
+											</a>
+										</li>
+										<li>
+											<a href="{{ url('/teacher/add')}}">
 												<span class="sidebar-mini">AT</span>
 												<span class="sidebar-normal">Add Teacher</span>
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="{{ url('/teacher/edit')}}">
 												<span class="sidebar-mini">ET</span>
 												<span class="sidebar-normal">Edit Teacher</span>
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="{{ url('/teacher/remove')}}">
 												<span class="sidebar-mini">RT</span>
 												<span class="sidebar-normal">Remove Teacher</span>
 											</a>
 										</li>
 																	<li>
-											<a href="#">
+											<a href="{{ url('/teacher/assign')}}">
 												<span class="sidebar-mini">AC</span>
 												<span class="sidebar-normal">Assign Class</span>
 											</a>
@@ -244,31 +256,31 @@ Tip 2: you can change the color of the active button using the data-active-color
 								<div class="collapse" id="mapsExamples">
 				<ul class="nav">
 					<li>
-						<a href="#">
+						<a href="{{ url('/guardian/overview')}}">
 							<span class="sidebar-mini">GO</span>
 							<span class="sidebar-normal">Overview</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="{{ url('/guardian/add')}}">
 							<span class="sidebar-mini">AG</span>
 							<span class="sidebar-normal">Add Guardian</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="{{ url('/guardian/edit')}}">
 							<span class="sidebar-mini">EG</span>
 							<span class="sidebar-normal">Edit Guardian</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="{{ url('/guardian/remove')}}">
 							<span class="sidebar-mini">RG</span>
 							<span class="sidebar-normal">Remove Guardian</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="{{ url('/guardian/assign')}}">
 							<span class="sidebar-mini">AW</span>
 							<span class="sidebar-normal">Add Ward</span>
 						</a>
