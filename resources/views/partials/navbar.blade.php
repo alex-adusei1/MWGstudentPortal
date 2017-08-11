@@ -53,19 +53,7 @@
               				<li><a href="{{ route('login') }}">Login</a></li>
               				<li><a href="{{ route('register') }}">Register</a></li>
               		@else
-                  <li class="dropdown ">
-                    <a href="#settings" class="btn-rotate dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                      <i class="ti-settings"></i>
-                      <p class="hidden-md hidden-lg">
-                          Settings
-                      </p>
-                    </a>
 
-                    <ul class="dropdown-menu" role="menu">
-
-                        <li><a href="{{ url('/user' ) }}">User Profile</a></li>
-                        <li><a href="#">Check Stats</a></li>
-                        <li><a href="#">Settings</a></li>
                         <li>
                             <a href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
@@ -78,10 +66,26 @@
                             </form>
                         </li>
 
+              		@endif
+
+                  <li class="dropdown ">
+                    <a href="#settings" class="btn-rotate dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      <i class="ti-settings"></i>
+                      <p class="hidden-md hidden-lg">
+                          Settings <b class="caret"></b>
+                      </p>
+                    </a>
+
+                    <ul class="dropdown-menu nav" role="menu">
+
+                        <li><a href="#">Institution Profile</a></li>
+                        <li><a href="#">Edit Institution</a></li>
+                        <li><a href="#">Settings</a></li>
+
+
 
                     </ul>
                   </li>
-              		@endif
                 </ul>
             </div>
         </div>
