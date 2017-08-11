@@ -12,13 +12,15 @@
                       {{ csrf_field() }}
                             <div class="card" data-background="color" data-color="blue">
                                 <div class="card-header">
-                                    <h3 class="card-title">Login</h3>
+                                    <h3 class="card-title"><i class="fa fa-user "></i> Login </h3>
                                 </div>
                                 <div class="card-content">
                                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                        <label for="email">Email address</label>
-                                        <input type="email" placeholder="Enter email" class="form-control input-no-border" name="email" value="{{ old('email') }}" required autofocus>
-
+                                        <div class="input-group m-b-sm">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                                                    <input type="email" class="form-control" name="email" placeholder="Email" aria-describedby="basic-addon1" value="{{ old('email')}}" required>
+                                                </div>
+                                        
                                         @if ($errors->has('email'))
                                             <span class="help-block">
                                                 <strong>{{ $errors->first('email') }}</strong>
@@ -26,9 +28,11 @@
                                         @endif
                                     </div>
                                     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                                        <label for="password" >Password</label>
-                                        <input type="password" placeholder="Password" class="form-control input-no-border" name="password" required>
-
+                                        
+                                        <div class="input-group m-b-sm">
+                                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-lock"></i></span>
+                                                    <input type="email" class="form-control" name="password" placeholder="Password" aria-describedby="basic-addon1" value="{{ old('password')}}" required>
+                                                </div>
                                         @if ($errors->has('password'))
                                             <span class="help-block">
                                                 <strong>{{ $errors->first('password') }}</strong>

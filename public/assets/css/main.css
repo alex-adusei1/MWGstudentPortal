@@ -16,3 +16,7 @@ body{
     padding-right: 140px !important;
     border-radius: 5px !important;
 }
+
+.card .card-title{
+    padding-left: 120px !important;
+}
