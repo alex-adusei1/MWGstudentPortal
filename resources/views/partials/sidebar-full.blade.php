@@ -31,21 +31,22 @@ Tip 2: you can change the color of the active button using the data-active-color
 				<div class="collapse" id="collapseExample">
 					<ul class="nav">
 						<li>
-							<a href="#profile">
+							<a href="{{ url('/user-profile') }}">
 								<span class="sidebar-mini">Mp</span>
-								<span class="{{ url('/user' ) }}">My Profile</span>
+								<span class="sidebar-normal">My Profile</span>
 							</a>
 						</li>
 
 						<li>
-							<a href="#edit">
+							<a href="{{ url('/user-profile/edit')}}">
 								<span class="sidebar-mini">Ep</span>
-								<span class="{{ url('/user/edit' ) }}">Edit Profile</span>
+								<span class="sidebar-normal">Edit Profile</span>
 							</a>
 						</li>
 
 						<li>
-							<a href="#settings">
+							<!-- Change Password, Profile Image and Email settings -->
+							<a href="{{ url('/user-settings')}}">
 								<span class="sidebar-mini">S</span>
 								<span class="sidebar-normal">Settings</span>
 							</a>
@@ -55,7 +56,7 @@ Tip 2: you can change the color of the active button using the data-active-color
 			</div>
 		</div>
 <!-- User end -->
-
+<!-- Dashboard -->
 				<ul class="nav">
 						<li class="active">
 								<a data-toggle="collapse" href="#dashboardOverview" aria-expanded="true">
@@ -68,13 +69,13 @@ Tip 2: you can change the color of the active button using the data-active-color
 				<ul class="nav">
 
 					<li class="active"> <!-- make active class dynamic -->
-						<a href="#">
+						<a href="{{ url('/dashboard')}}">
 							<span class="sidebar-mini">O</span>
 							<span class="sidebar-normal">Overview</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="{{ url('/stats')}}">
 							<span class="sidebar-mini">S</span>
 							<span class="sidebar-normal">Stats</span>
 						</a>
@@ -82,17 +83,26 @@ Tip 2: you can change the color of the active button using the data-active-color
 				</ul>
 			</div>
 						</li>
+			<!-- End Dashboard -->
 			<!-- Academy Section -->
 		<li>
 			<a data-toggle="collapse" href="#componentsExamples">
 				<i class="ti-package"></i>
-				<p>Academics
-					 <b class="caret"></b>
-				</p>
+
+					<p>Academics
+						 <b class="caret"></b>
+					</p>
+
 			</a>
 			<div class="collapse" id="componentsExamples">
 				<ul class="nav">
-												<li>
+					<li>
+						<a href="{{ url('/academic/overview')}}">
+							<span class="sidebar-mini">OA</span>
+							<span class="sidebar-normal">Overview</span>
+						</a>
+					</li>
+					<li>
 						<a href="#">
 							<span class="sidebar-mini">C&C</span>
 							<span class="sidebar-normal">Class & Course</span>
