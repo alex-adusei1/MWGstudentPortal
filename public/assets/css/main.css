@@ -12,11 +12,11 @@ body{
     background-image: url('../img/skol.jpg') !important;
 }
 .btn.btn-fill, .navbar .navbar-nav > li > a.btn.btn-fill{
-    padding-left: 140px !important;
-    padding-right: 140px !important;
+    padding-left: 132px !important;
+    padding-right: 132px !important;
     border-radius: 5px !important;
 }
 
-.card .card-title{
-    padding-left: 120px !important;
+.login-page > .content, .lock-page > .content{
+    padding-top: 14vh !important;
 }

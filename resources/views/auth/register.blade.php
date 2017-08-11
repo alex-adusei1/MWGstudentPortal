@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="wrapper wrapper-full-page">
-    <div class="full-page login-page" data-color="orange" data-image="/assets/img/background/background-2.jpg">
+    <div class="full-page login-page" data-color="" data-image="/assets/img/background/background-2.jpg">
     <!--   you can change the color of the filter page using: data-color="blue | azure | green | orange | red | purple" -->
         <div class="content">
             <div class="container">
@@ -17,8 +17,10 @@
                                 <div class="card-content">
                                   <!-- name field -->
                                   <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                                      <label for="name">Name</label>
-                                      <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+                                      <div class="input-group m-b-sm">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                                    <input type="text" class="form-control" name="name" placeholder="Full Name" aria-describedby="basic-addon1" value="{{ old('name')}}" required autofocus>
+                                                </div>
 
                                       @if ($errors->has('name'))
                                           <span class="help-block">
@@ -29,9 +31,11 @@
                                   </div>
                                     <!-- email field -->
                                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                        <label for="email">Email address</label>
-                                        <input id="email" type="email" placeholder="Enter email" class="form-control input-no-border" name="email" value="{{ old('email') }}" required autofocus>
-
+                                        <div class="input-group m-b-sm">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                                                    <input type="email" class="form-control" name="email" placeholder="Email" aria-describedby="basic-addon1" value="{{ old('email')}}" required>
+                                                </div>
+                                        
                                         @if ($errors->has('email'))
                                             <span class="help-block">
                                                 <strong>{{ $errors->first('email') }}</strong>
@@ -41,9 +45,11 @@
 
                                     <!-- password field -->
                                     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                                        <label for="password" >Password</label>
-                                        <input id="password" type="password" placeholder="Password" class="form-control input-no-border" name="password" required>
-
+                                        <div class="input-group m-b-sm">
+                                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-lock"></i></span>
+                                                    <input type="password" class="form-control" name="password" placeholder="Password" aria-describedby="basic-addon1" value="{{ old('password')}}" required>
+                                        </div>
+                                        
                                         @if ($errors->has('password'))
                                             <span class="help-block">
                                                 <strong>{{ $errors->first('password') }}</strong>
@@ -55,9 +61,10 @@
                                     <!-- confirm password field -->
                                     <div class="form-group">
 
-                                        <label for="password-confirm">Confirm Password</label>
-                                        <input id="password-confirm" type="password" class="form-control input-no-border" name="password_confirmation" required>
-
+                                        <div class="input-group m-b-sm">
+                                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-lock"></i></span>
+                                            <input type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password" aria-describedby="basic-addon1" required>
+                                                </div>
                                     </div>
                                 </div>
 

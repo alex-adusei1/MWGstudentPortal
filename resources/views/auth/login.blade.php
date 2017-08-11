@@ -18,7 +18,7 @@
                                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                         <div class="input-group m-b-sm">
                                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
-                                                    <input type="email" class="form-control" name="email" placeholder="Email" aria-describedby="basic-addon1" value="{{ old('email')}}" required>
+                                                    <input type="email" class="form-control" name="email" placeholder="Email" aria-describedby="basic-addon1" value="{{ old('email')}}" required autofocus>
                                                 </div>
                                         
                                         @if ($errors->has('email'))
@@ -31,7 +31,7 @@
                                         
                                         <div class="input-group m-b-sm">
                                             <span class="input-group-addon" id="basic-addon1"><i class="fa fa-lock"></i></span>
-                                                    <input type="email" class="form-control" name="password" placeholder="Password" aria-describedby="basic-addon1" value="{{ old('password')}}" required>
+                                                    <input type="password" class="form-control" name="password" placeholder="Password" aria-describedby="basic-addon1" value="{{ old('password')}}" required>
                                                 </div>
                                         @if ($errors->has('password'))
                                             <span class="help-block">
