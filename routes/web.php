@@ -24,7 +24,7 @@ Route::get('/user', 'PagesController@student');
 Route::get('/user-profile', 'PagesController@userProfile')->name('user-profile');
 Route::get('/stats', 'PagesController@stats')->name('stats');
 Route::get('/academic/overview', 'PagesController@academicOverview')->name('academic-overview');
-Route::get('/academic/class', 'PagesController@class')->name('class');
+Route::get('/academic/class', 'PagesController@classes')->name('class');
 Route::get('/academic/term', 'PagesController@term')->name('term');
 Route::get('/academic/promote-student', 'PagesController@promoteStudent')->name('promote-student');
 Route::get('/academic/allocate-teacher', 'PagesController@allocateTeacher')->name('allocate-teacher');
