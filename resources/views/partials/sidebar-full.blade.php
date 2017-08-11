@@ -66,14 +66,15 @@ Tip 2: you can change the color of the active button using the data-active-color
 								</a>
 			<div class="collapse in" id="dashboardOverview">
 				<ul class="nav">
-					<li class="active">
-						<a href="overview.html">
+
+					<li class="active"> <!-- make active class dynamic -->
+						<a href="#">
 							<span class="sidebar-mini">O</span>
 							<span class="sidebar-normal">Overview</span>
 						</a>
 					</li>
 					<li>
-						<a href="stats.html">
+						<a href="#">
 							<span class="sidebar-mini">S</span>
 							<span class="sidebar-normal">Stats</span>
 						</a>
@@ -92,49 +93,49 @@ Tip 2: you can change the color of the active button using the data-active-color
 			<div class="collapse" id="componentsExamples">
 				<ul class="nav">
 												<li>
-						<a href="../components/buttons.html">
-							<span class="sidebar-mini">CT</span>
-							<span class="sidebar-normal">Class & Term</span>
+						<a href="#">
+							<span class="sidebar-mini">C&C</span>
+							<span class="sidebar-normal">Class & Course</span>
 						</a>
 					</li>
 												<li>
-						<a href="../components/panels.html">
-							<span class="sidebar-mini">S</span>
-							<span class="sidebar-normal">Subjects</span>
+						<a href="#">
+							<span class="sidebar-mini">T</span>
+							<span class="sidebar-normal">Term</span>
 						</a>
 					</li>
 												<li>
-						<a href="../components/sweet-alert.html">
-							<span class="sidebar-mini">TT</span>
-							<span class="sidebar-normal">Time Table</span>
+						<a href="#">
+							<span class="sidebar-mini">PS</span>
+							<span class="sidebar-normal">Promote Student</span>
 						</a>
 					</li>
 
 					<li>
-						<a href="../components/grid.html">
+						<a href="#">
 						<span class="sidebar-mini">TA</span>
 						<span class="sidebar-normal">Teacher Allocation</span>
 						</a>
 						</li>
 
-												<li>
-						<a href="../components/notifications.html">
+												<!-- <li>
+						<a href="#">
 							<span class="sidebar-mini">N</span>
 							<span class="sidebar-normal">Notifications</span>
 						</a>
 					</li>
 												<li>
-						<a href="../components/icons.html">
+						<a href="#">
 							<span class="sidebar-mini">I</span>
 							<span class="sidebar-normal">Icons</span>
 						</a>
 					</li>
 												<li>
-						<a href="../components/typography.html">
+						<a href="#">
 							<span class="sidebar-mini"><i class="ti-panel"></i></span>
 							<span class="sidebar-normal">Typography</span>
 						</a>
-					</li>
+					</li> -->
 										</ul>
 			</div>
 		</li>
@@ -153,27 +154,27 @@ Tip 2: you can change the color of the active button using the data-active-color
 								<div class="collapse" id="formsExamples">
 				<ul class="nav">
 					<li>
-						<a href="../forms/regular.html">
-							<span class="sidebar-mini">Rf</span>
-							<span class="sidebar-normal">Regular Forms</span>
+						<a href="#">
+							<span class="sidebar-mini">AS</span>
+							<span class="sidebar-normal">Add Student</span>
 						</a>
 					</li>
 					<li>
-						<a href="../forms/extended.html">
-							<span class="sidebar-mini">Ef</span>
-							<span class="sidebar-normal">Extended Forms</span>
+						<a href="#">
+							<span class="sidebar-mini">ES</span>
+							<span class="sidebar-normal">Edit Student</span>
 						</a>
 					</li>
 					<li>
-						<a href="../forms/validation.html">
-							<span class="sidebar-mini">Vf</span>
-							<span class="sidebar-normal">Validation Forms</span>
+						<a href="#">
+							<span class="sidebar-mini">RS</span>
+							<span class="sidebar-normal">Remove Student</span>
 						</a>
 					</li>
 												<li>
-						<a href="../forms/wizard.html">
-							<span class="sidebar-mini">W</span>
-							<span class="sidebar-normal">Wizard</span>
+						<a href="#">
+							<span class="sidebar-mini">AC</span>
+							<span class="sidebar-normal">Assign Class</span>
 						</a>
 					</li>
 										</ul>
@@ -191,32 +192,32 @@ Tip 2: you can change the color of the active button using the data-active-color
 										</p>
 								</a>
 								<div class="collapse" id="tablesExamples">
-				<ul class="nav">
-					<li>
-						<a href="../tables/regular.html">
-							<span class="sidebar-mini">RT</span>
-							<span class="sidebar-normal">Regular Tables</span>
-						</a>
-					</li>
-					<li>
-						<a href="../tables/extended.html">
-							<span class="sidebar-mini">ET</span>
-							<span class="sidebar-normal">Extended Tables</span>
-						</a>
-					</li>
-					<li>
-						<a href="../tables/bootstrap-table.html">
-							<span class="sidebar-mini">BT</span>
-							<span class="sidebar-normal">Bootstrap Table</span>
-						</a>
-					</li>
-					<li>
-						<a href="../tables/datatables.net.html">
-							<span class="sidebar-mini">DT</span>
-							<span class="sidebar-normal">DataTables.net</span>
-						</a>
-					</li>
-										</ul>
+									<ul class="nav">
+										<li>
+											<a href="#">
+												<span class="sidebar-mini">AT</span>
+												<span class="sidebar-normal">Add Teacher</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="sidebar-mini">ET</span>
+												<span class="sidebar-normal">Edit Teacher</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="sidebar-mini">RT</span>
+												<span class="sidebar-normal">Remove Teacher</span>
+											</a>
+										</li>
+																	<li>
+											<a href="#">
+												<span class="sidebar-mini">AC</span>
+												<span class="sidebar-normal">Assign Class</span>
+											</a>
+										</li>
+															</ul>
 								</div>
 						</li>
 						<!-- Teacher End -->
@@ -233,21 +234,33 @@ Tip 2: you can change the color of the active button using the data-active-color
 								<div class="collapse" id="mapsExamples">
 				<ul class="nav">
 					<li>
-						<a href="../maps/google.html">
-							<span class="sidebar-mini">GM</span>
-							<span class="sidebar-normal">Google Maps</span>
+						<a href="#">
+							<span class="sidebar-mini">GO</span>
+							<span class="sidebar-normal">Overview</span>
 						</a>
 					</li>
 					<li>
-						<a href="../maps/vector.html">
-							<span class="sidebar-mini">VM</span>
-							<span class="sidebar-normal">Vector maps</span>
+						<a href="#">
+							<span class="sidebar-mini">AG</span>
+							<span class="sidebar-normal">Add Guardian</span>
 						</a>
 					</li>
 					<li>
-						<a href="../maps/fullscreen.html">
-							<span class="sidebar-mini">FSM</span>
-							<span class="sidebar-normal">Full Screen Map</span>
+						<a href="#">
+							<span class="sidebar-mini">EG</span>
+							<span class="sidebar-normal">Edit Guardian</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="sidebar-mini">RG</span>
+							<span class="sidebar-normal">Remove Guardian</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="sidebar-mini">AW</span>
+							<span class="sidebar-normal">Add Ward</span>
 						</a>
 					</li>
 										</ul>
@@ -288,14 +301,54 @@ Tip 2: you can change the color of the active button using the data-active-color
 							</div>
 										</li>
 						<!-- Messaging End -->
-		<!-- <li>
-								<a href="../charts.html">
-										<i class="ti-bar-chart-alt"></i>
-										<p>Charts</p>
-								</a>
-						</li>
 
-		<li>
+						<!-- Attentance Clock In/Out -->
+							<li>
+								<a data-toggle="collapse" href="#attendance">
+										<i class="ti-bar-chart-alt"></i>
+										<p>
+											Attendance<b class="caret"></b>
+										</p>
+								</a>
+
+								<div class="collapse" id="attendance">
+				<ul class="nav">
+					<li>
+						<a href="#">
+							<span class="sidebar-mini">SA</span>
+							<span class="sidebar-normal">Student Attendance</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="sidebar-mini">SCI</span>
+							<span class="sidebar-normal">Staff Clock-In</span>
+						</a>
+					</li>
+					<!-- <li>
+						<a href="#">
+							<span class="sidebar-mini">LP</span>
+							<span class="sidebar-normal">Login Page</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="sidebar-mini">RP</span>
+							<span class="sidebar-normal">Register Page</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="sidebar-mini">LSP</span>
+							<span class="sidebar-normal">Lock Screen Page</span>
+						</a>
+					</li> -->
+										</ul>
+								</div>
+							</li>
+							<!-- End Clock In/Out -->
+
+		<!-- <li>
 								<a href="../calendar.html">
 										<i class="ti-calendar"></i>
 										<p>Calendar</p>
@@ -313,31 +366,31 @@ Tip 2: you can change the color of the active button using the data-active-color
 								<div class="collapse" id="pagesExamples">
 				<ul class="nav">
 					<li>
-						<a href="../pages/timeline.html">
+						<a href="#">
 							<span class="sidebar-mini">TP</span>
 							<span class="sidebar-normal">Timeline Page</span>
 						</a>
 					</li>
 					<li>
-						<a href="../pages/user.html">
+						<a href="#">
 							<span class="sidebar-mini">UP</span>
 							<span class="sidebar-normal">User Page</span>
 						</a>
 					</li>
 					<li>
-						<a href="../pages/login.html">
+						<a href="#">
 							<span class="sidebar-mini">LP</span>
 							<span class="sidebar-normal">Login Page</span>
 						</a>
 					</li>
 					<li>
-						<a href="../pages/register.html">
+						<a href="#">
 							<span class="sidebar-mini">RP</span>
 							<span class="sidebar-normal">Register Page</span>
 						</a>
 					</li>
 					<li>
-						<a href="../pages/lock.html">
+						<a href="#">
 							<span class="sidebar-mini">LSP</span>
 							<span class="sidebar-normal">Lock Screen Page</span>
 						</a>
