@@ -14,14 +14,14 @@
 
 
      <!-- Bootstrap core CSS     -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" />
 
     <!--  Paper Dashboard core CSS    -->
-    <link href="/assets/css/paper-dashboard-v=1.2.1.css" rel="stylesheet"/>
+    <link href="{{asset('assets/css/paper-dashboard-v=1.2.1.css')}}" rel="stylesheet"/>
 
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="/assets/css/demo.css" rel="stylesheet" />
+    <link href="{{asset('assets/css/demo.css')}}" rel="stylesheet" />
 
 
     <!--  Fonts and icons     -->
@@ -50,7 +50,7 @@
 </body>
 
 <!--   Core JS Files. Extra: TouchPunch for touch library inside jquery-ui.min.js   -->
-<script src="/assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
 <script src="/assets/js/jquery-ui.min.js" type="text/javascript"></script>
 <script src="/assets/js/perfect-scrollbar.min.js" type="text/javascript"></script>
 <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
