@@ -13,7 +13,7 @@ Tip 2: you can change the color of the active button using the data-active-color
 	</a>
 </div>
 	<div class="sidebar-wrapper">
-
+		<!-- User Section -->
 		<div class="user">
 			<div class="info">
 				<div class="photo">
@@ -54,7 +54,7 @@ Tip 2: you can change the color of the active button using the data-active-color
 				</div>
 			</div>
 		</div>
-
+<!-- User end -->
 
 				<ul class="nav">
 						<li class="active">
@@ -81,10 +81,11 @@ Tip 2: you can change the color of the active button using the data-active-color
 				</ul>
 			</div>
 						</li>
+			<!-- Academy Section -->
 		<li>
 			<a data-toggle="collapse" href="#componentsExamples">
 				<i class="ti-package"></i>
-				<p>Components
+				<p>Academics
 					 <b class="caret"></b>
 				</p>
 			</a>
@@ -92,28 +93,30 @@ Tip 2: you can change the color of the active button using the data-active-color
 				<ul class="nav">
 												<li>
 						<a href="../components/buttons.html">
-							<span class="sidebar-mini">B</span>
-							<span class="sidebar-normal">Buttons</span>
-						</a>
-					</li>
-												<li>
-						<a href="../components/grid.html">
-							<span class="sidebar-mini">GS</span>
-							<span class="sidebar-normal">Grid System</span>
+							<span class="sidebar-mini">CT</span>
+							<span class="sidebar-normal">Class & Term</span>
 						</a>
 					</li>
 												<li>
 						<a href="../components/panels.html">
-							<span class="sidebar-mini">P</span>
-							<span class="sidebar-normal">Panels</span>
+							<span class="sidebar-mini">S</span>
+							<span class="sidebar-normal">Subjects</span>
 						</a>
 					</li>
 												<li>
 						<a href="../components/sweet-alert.html">
-							<span class="sidebar-mini">SA</span>
-							<span class="sidebar-normal">Sweet Alert</span>
+							<span class="sidebar-mini">TT</span>
+							<span class="sidebar-normal">Time Table</span>
 						</a>
 					</li>
+
+					<li>
+						<a href="../components/grid.html">
+						<span class="sidebar-mini">TA</span>
+						<span class="sidebar-normal">Teacher Allocation</span>
+						</a>
+						</li>
+
 												<li>
 						<a href="../components/notifications.html">
 							<span class="sidebar-mini">N</span>
@@ -135,11 +138,15 @@ Tip 2: you can change the color of the active button using the data-active-color
 										</ul>
 			</div>
 		</li>
+<!-- Academic End -->
+
+<!-- Student Section -->
+
 		<li>
 			<a data-toggle="collapse" href="#formsExamples">
 										<i class="ti-clipboard"></i>
 										<p>
-					Forms
+					Student
 											 <b class="caret"></b>
 										</p>
 								</a>
@@ -172,11 +179,14 @@ Tip 2: you can change the color of the active button using the data-active-color
 										</ul>
 								</div>
 						</li>
+						<!-- Student End -->
+
+						<!-- Teacher  -->
 						<li>
 			<a data-toggle="collapse" href="#tablesExamples">
 										<i class="ti-view-list-alt"></i>
 										<p>
-					Table list
+					Teacher
 											 <b class="caret"></b>
 										</p>
 								</a>
@@ -209,11 +219,14 @@ Tip 2: you can change the color of the active button using the data-active-color
 										</ul>
 								</div>
 						</li>
+						<!-- Teacher End -->
+
+						<!-- Guardian  -->
 		<li>
 			<a data-toggle="collapse" href="#mapsExamples">
 										<i class="ti-map"></i>
 										<p>
-					Maps
+					Guardian
 											 <b class="caret"></b>
 										</p>
 								</a>
@@ -240,23 +253,60 @@ Tip 2: you can change the color of the active button using the data-active-color
 										</ul>
 								</div>
 						</li>
-		<li>
+						<!-- Guardian End -->
+
+						<!-- Messaging Portal -->
+						<li>
+							<a data-toggle="collapse" href="#messageSMS">
+									<i class="ti-map"></i>
+									<p>
+										Messages/SMS
+										 <b class="caret"></b>
+									</p>
+							</a>
+							<div class="collapse" id="messageSMS">
+								<ul class="nav">
+									<li>
+										<a href="#">
+											<span class="sidebar-mini">E</span>
+											<span class="sidebar-normal">Email</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sidebar-mini">S</span>
+											<span class="sidebar-normal">SMS</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sidebar-mini">ES</span>
+											<span class="sidebar-normal">Email Settings</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+										</li>
+						<!-- Messaging End -->
+		<!-- <li>
 								<a href="../charts.html">
 										<i class="ti-bar-chart-alt"></i>
 										<p>Charts</p>
 								</a>
 						</li>
+
 		<li>
 								<a href="../calendar.html">
 										<i class="ti-calendar"></i>
 										<p>Calendar</p>
 								</a>
-						</li>
+						</li> -->
+<!-- System Settings -->
 		<li>
 			<a data-toggle="collapse" href="#pagesExamples">
 										<i class="ti-gift"></i>
 										<p>
-					Pages
+					System Settings
 											 <b class="caret"></b>
 										</p>
 								</a>
@@ -295,6 +345,7 @@ Tip 2: you can change the color of the active button using the data-active-color
 										</ul>
 								</div>
 						</li>
+						<!-- End System Settings -->
 				</ul>
 	</div>
 </div>
