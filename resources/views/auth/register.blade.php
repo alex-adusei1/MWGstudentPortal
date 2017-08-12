@@ -12,7 +12,7 @@
                       {{ csrf_field() }}
                             <div class="card" data-background="color" data-color="blue">
                                 <div class="card-header">
-                                    <h3 class="card-title">Register</h3>
+                                    <h3 class="card-title"><i class='fa fa-user'></i> Register</h3>
                                 </div>
                                 <div class="card-content">
                                   <!-- name field -->
@@ -71,7 +71,7 @@
 
                                 <div class="card-footer text-center">
 
-                                    <button type="submit" class="btn btn-fill btn-wd ">Register</button>
+                                    <button type="submit" class="btn btn-fill btn-wd ">Signup <i class="fa fa-gear"></i></button>
 
                                 </div>
                             </div>

@@ -17,6 +17,12 @@ body{
     border-radius: 5px !important;
 }
 
+.card .card-title{
+    padding-left: 120px !important;
+}
+
+
+
 .login-page > .content, .lock-page > .content{
     padding-top: 14vh !important;
 }
