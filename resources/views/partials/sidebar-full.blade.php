@@ -69,7 +69,7 @@ Tip 2: you can change the color of the active button using the data-active-color
 				<ul class="nav">
 
 					<li class="active"> <!-- make active class dynamic -->
-						<a href="{{ url('/dashboard')}}">
+						<a href="{{ url('/home')}}">
 							<span class="sidebar-mini">O</span>
 							<span class="sidebar-normal">Overview</span>
 						</a>

@@ -94,7 +94,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX1B71USyaSc9Jn8pM-0py8Mi7mySywLQ"></script>
 
 <!-- Wizard Plugin    -->
-<script src="{{asset('')}}assets/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="{{asset('assets/js/jquery.bootstrap.wizard.min.js')}}"></script>
 
 <!--  Bootstrap Table Plugin    -->
 <script src="{{asset('assets/js/bootstrap-table.js')}}"></script>

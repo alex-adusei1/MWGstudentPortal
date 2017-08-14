@@ -7,14 +7,14 @@ Tip 2: you can change the color of the active button using the data-active-color
 
   <div class="sidebar-wrapper">
         <div class="logo">
-            <a href="{{ url('/dashboard') }}" class="simple-text">
+            <a href="{{ url('/home') }}" class="simple-text">
                 {{ config('app.name', 'MWG Code Academy') }}
             </a>
         </div>
 
         <ul class="nav">
             <li class="active">
-                <a href="/dashboard">
+                <a href="/home">
                     <i class="ti-panel"></i>
                     <p>Dashboard</p>
                 </a>
