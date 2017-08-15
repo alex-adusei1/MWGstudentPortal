@@ -6,7 +6,7 @@
     <!--   you can change the color of the filter page using: data-color="blue | azure | green | orange | red | purple" -->
         <div class="content">
             <div class="container">
-                <div class="row">
+                <div class="row" style="margin-top:15%;">
                     <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
                       <form method="POST" action="{{ route('login') }}">
                       {{ csrf_field() }}
