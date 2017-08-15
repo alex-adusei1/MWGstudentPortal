@@ -6,118 +6,92 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    public function student()
-    {
-        return view('pages.user.student');
-    }
+    // public function student()
+    // {
+    //     $title = "Manage Teacher";
+    //     return view('pages.user.student',['title'=> $title]);
+    // }
 // View User Profile
-    public function userProfile()
+    public function Profile()
     {
-        return view('pages.user.user-profile');
+        $title = "User Profile";
+        return view('pages.user.profile',['title'=> $title]);
     }
+
 
 // View User Profile
     public function stats()
     {
-        return view('pages.dashboard.stats');
+        $title = "Statistics";
+        return view('pages.dashboard.stats',['title'=> $title]);
     }
 
 // Academic Overview
-    public function academicOverview()
+    public function academicManage()
     {
-        return view('pages.academic.overview');
+        $title = "Manage Academics";
+        return view('pages.academic.manage',['title'=> $title]);
     }
 
     public function classes()
     {
-        return view('pages.academic.class');
+        $title = "Manage Classes";
+        return view('pages.academic.class',['title'=> $title]);
     }
 
     public function term()
-    {
-        return view('pages.academic.term');
+    { 
+        $title = "Manage Terms";
+        return view('pages.academic.term',['title'=> $title]);
     }
 
     public function promoteStudent()
     {
-        return view('pages.academic.promote-student');
+        $title = "Promote students";
+        return view('pages.academic.promote-student',['title'=> $title]);
     }
 
     public function allocateTeacher()
     {
-        return view('pages.academic.allocate-teacher');
+        $title = "Allocate Teachers";
+        return view('pages.academic.allocate-teacher',['title'=> $title]);
     }
 // student
-    public function overviewStudent()
+    public function manageStudent()
     {
-        return view('pages.student.overview');
+        $title = "Manage Students";
+        return view('pages.student.manage',['title'=> $title]);
     }
-    public function addStudent()
-    {
-        return view('pages.student.add');
-    }
-
-    public function editStudent()
-    {
-        return view('pages.student.edit');
-    }
-
-    public function removeStudent()
-    {
-        return view('pages.student.remove');
-    }
+   
     public function assignStudent()
     {
-        return view('pages.student.assign');
+         $title = "Add Student To Class";
+        return view('pages.student.assign',['title'=> $title]);
     }
 
     // teacher
-    public function overviewTeacher()
+    public function manageTeacher()
     {
-        return view('pages.teacher.overview');
+        $title = "Manage Teachers";
+        return view('pages.teacher.manage',['title'=> $title]);
     }
-    public function addTeacher()
-    {
-        return view('pages.teacher.add');
-    }
-
-    public function editTeacher()
-    {
-        return view('pages.teacher.edit');
-    }
-
-    public function removeTeacher()
-    {
-        return view('pages.teacher.remove');
-    }
+    
     public function assignTeacher()
     {
-        return view('pages.teacher.assign');
+         $title = "Assign Teachers To Class";
+        return view('pages.teacher.assign',['title'=> $title]);
     }
 
     // Guardian
     // public function addGuardian()
-    public function overviewGuardian()
+    public function manageGuardian()
     {
-        return view('pages.guardian.overview');
-    }
-
-    public function addGuardian()
-    {
-        return view('pages.guardian.add');
-    }
-
-    public function editGuardian()
-    {
-        return view('pages.guardian.edit');
-    }
-
-    public function removeGuardian()
-    {
-        return view('pages.guardian.remove');
+         $title = "Manage Guardians";
+        return view('pages.guardian.manage',['title'=> $title]);
     }
     public function assignGuardian()
     {
-        return view('pages.guardian.assign');
+         $title = "Assign Guardian To Ward";
+        return view('pages.guardian.assign',['title'=> $title]);
     }
 }

@@ -11,7 +11,7 @@
                     <span class="icon-bar bar3"></span>
                 </button>
                 <a class="navbar-brand" href="#Dashboard">
-        Overview
+    {{ $title or "Title here"}}
       </a>
             </div>
             <div class="collapse navbar-collapse">

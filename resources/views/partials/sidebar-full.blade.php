@@ -31,14 +31,14 @@ Tip 2: you can change the color of the active button using the data-active-color
 				<div class="collapse" id="collapseExample">
 					<ul class="nav">
 						<li>
-							<a href="{{ url('/user-profile') }}">
+							<a href="{{ url('/profile') }}">
 								<span class="sidebar-mini">Mp</span>
 								<span class="sidebar-normal">My Profile</span>
 							</a>
 						</li>
 
 						<li>
-							<a href="{{ url('/user-profile/edit')}}">
+							<a href="{{ url('/profile/edit')}}">
 								<span class="sidebar-mini">Ep</span>
 								<span class="sidebar-normal">Edit Profile</span>
 							</a>
@@ -97,9 +97,9 @@ Tip 2: you can change the color of the active button using the data-active-color
 			<div class="collapse" id="componentsExamples">
 				<ul class="nav">
 					<li>
-						<a href="{{ url('/academic/overview')}}">
+						<a href="{{ url('/academic/manage')}}">
 							<span class="sidebar-mini">OA</span>
-							<span class="sidebar-normal">Overview</span>
+							<span class="sidebar-normal">Manage</span>
 						</a>
 					</li>
 					<li>
@@ -157,38 +157,21 @@ Tip 2: you can change the color of the active button using the data-active-color
 			<a data-toggle="collapse" href="#formsExamples">
 										<i class="ti-clipboard"></i>
 										<p>
-					Student
+					Students
 											 <b class="caret"></b>
 										</p>
 								</a>
 								<div class="collapse" id="formsExamples">
 				<ul class="nav">
 					<li>
-						<a href="{{ url('/student/overview')}}">
+						<a href="{{ url('/students/manage')}}">
 							<span class="sidebar-mini">SO</span>
-							<span class="sidebar-normal">Overview</span>
+							<span class="sidebar-normal">Manage Students</span>
 						</a>
 					</li>
-					<li>
-						<a href="{{ url('/student/add')}}">
-							<span class="sidebar-mini">AS</span>
-							<span class="sidebar-normal">Add Student</span>
-						</a>
-					</li>
-					<li>
-						<a href="{{ url('/student/edit')}}">
-							<span class="sidebar-mini">ES</span>
-							<span class="sidebar-normal">Edit Student</span>
-						</a>
-					</li>
-					<li>
-						<a href="{{ url('/student/remove')}}">
-							<span class="sidebar-mini">RS</span>
-							<span class="sidebar-normal">Remove Student</span>
-						</a>
-					</li>
-												<li>
-						<a href="{{ url('/student/assign')}}">
+								
+					  <li>
+						<a href="{{ url('/students/assign')}}">
 							<span class="sidebar-mini">AC</span>
 							<span class="sidebar-normal">Assign Class</span>
 						</a>
@@ -203,38 +186,21 @@ Tip 2: you can change the color of the active button using the data-active-color
 			<a data-toggle="collapse" href="#tablesExamples">
 										<i class="ti-view-list-alt"></i>
 										<p>
-					Teacher
+					Teachers
 											 <b class="caret"></b>
 										</p>
 								</a>
 								<div class="collapse" id="tablesExamples">
 									<ul class="nav">
 										<li>
-											<a href="{{ url('/teacher/overview')}}">
+											<a href="{{ url('/teachers/manage')}}">
 												<span class="sidebar-mini">TO</span>
-												<span class="sidebar-normal">Overview</span>
+												<span class="sidebar-normal">Manage Teachers</span>
 											</a>
 										</li>
-										<li>
-											<a href="{{ url('/teacher/add')}}">
-												<span class="sidebar-mini">AT</span>
-												<span class="sidebar-normal">Add Teacher</span>
-											</a>
-										</li>
-										<li>
-											<a href="{{ url('/teacher/edit')}}">
-												<span class="sidebar-mini">ET</span>
-												<span class="sidebar-normal">Edit Teacher</span>
-											</a>
-										</li>
-										<li>
-											<a href="{{ url('/teacher/remove')}}">
-												<span class="sidebar-mini">RT</span>
-												<span class="sidebar-normal">Remove Teacher</span>
-											</a>
-										</li>
+										
 																	<li>
-											<a href="{{ url('/teacher/assign')}}">
+											<a href="{{ url('/teachers/assign')}}">
 												<span class="sidebar-mini">AC</span>
 												<span class="sidebar-normal">Assign Class</span>
 											</a>
@@ -249,40 +215,23 @@ Tip 2: you can change the color of the active button using the data-active-color
 			<a data-toggle="collapse" href="#mapsExamples">
 										<i class="ti-map"></i>
 										<p>
-					Guardian
+					Guardians
 											 <b class="caret"></b>
 										</p>
 								</a>
 								<div class="collapse" id="mapsExamples">
 				<ul class="nav">
 					<li>
-						<a href="{{ url('/guardian/overview')}}">
+						<a href="{{ url('/guardians/manage')}}">
 							<span class="sidebar-mini">GO</span>
-							<span class="sidebar-normal">Overview</span>
+							<span class="sidebar-normal">Manage Guardians</span>
 						</a>
 					</li>
+					
 					<li>
-						<a href="{{ url('/guardian/add')}}">
-							<span class="sidebar-mini">AG</span>
-							<span class="sidebar-normal">Add Guardian</span>
-						</a>
-					</li>
-					<li>
-						<a href="{{ url('/guardian/edit')}}">
-							<span class="sidebar-mini">EG</span>
-							<span class="sidebar-normal">Edit Guardian</span>
-						</a>
-					</li>
-					<li>
-						<a href="{{ url('/guardian/remove')}}">
-							<span class="sidebar-mini">RG</span>
-							<span class="sidebar-normal">Remove Guardian</span>
-						</a>
-					</li>
-					<li>
-						<a href="{{ url('/guardian/assign')}}">
+						<a href="{{ url('/guardians/assign')}}">
 							<span class="sidebar-mini">AW</span>
-							<span class="sidebar-normal">Add Ward</span>
+							<span class="sidebar-normal">Assign ward</span>
 						</a>
 					</li>
 										</ul>

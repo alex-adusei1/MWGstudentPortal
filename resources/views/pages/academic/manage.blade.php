@@ -14,6 +14,7 @@
                            <div class="card-content">
                                <div class="toolbar">
                                    <!--Here you can write extra buttons/actions for the toolbar-->
+                                  
                                </div>
                                <table id="bootstrap-table" class="table">
                                    <thead>
