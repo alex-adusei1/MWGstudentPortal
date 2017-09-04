@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Student;
-
-class StudentController extends Controller
+use App\CourseClass;
+class CourseClassController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,11 +13,9 @@ class StudentController extends Controller
      */
     public function index()
     {
-        //
-        $students = Student::get();
-
+      $course_class = CourseClass::get();
         // return $students;
-        return view('pages/student/manage', compact('students'));
+        return view('pages/course_class/manage', compact('course_class'));
     }
 
     /**
@@ -39,9 +36,7 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        Student::create($request->all());
-
-        return redirect('students/manage');
+        //
     }
 
     /**

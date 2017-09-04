@@ -37,6 +37,7 @@ Route::get('/academic/allocate-teacher', 'PagesController@allocateTeacher')->nam
 Route::prefix('students')->group(function(){
   Route::get('/manage', 'StudentController@index');
   Route::get('/assign', 'PagesController@assignStudent');
+  Route::post('/add-student', 'StudentController@store');
 
 
 });
@@ -53,4 +54,7 @@ Route::prefix('guardians')->group(function(){
   Route::get('/assign', 'PagesController@assignGuardian');
 
 
+});
+Route::prefix('classes')->group(function(){
+  Route::get('/view-class', 'CourseClassController@index');
 });

@@ -209,6 +209,39 @@ Tip 2: you can change the color of the active button using the data-active-color
 								</div>
 						</li>
 						<!-- Teacher End -->
+                                                
+                                                
+                                               				<!-- Class  -->
+		<li>
+			<a data-toggle="collapse" href="#mapsExamples">
+										<i class="ti-map"></i>
+										<p>
+					Class
+											 <b class="caret"></b>
+										</p>
+								</a>
+								<div class="collapse" id="mapsExamples">
+				<ul class="nav">
+					<li>
+						<a href="{{ url('/classes/view-class')}}">
+							<span class="sidebar-normal">Manage Course Classes</span>
+						</a>
+					</li>
+										</ul>
+								</div>
+						</li> 
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
 
 						<!-- Guardian  -->
 		<li>
