@@ -6,8 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
-    //
-    public function getAllStudents() {
-      
-    }
+    // fillable
+    protected $fillable = [
+        'first_name','last_name','other_name','gender','nationality','dob'
+    ];
+    
 }
