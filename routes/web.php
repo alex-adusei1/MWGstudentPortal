@@ -35,7 +35,7 @@ Route::get('/academic/allocate-teacher', 'PagesController@allocateTeacher')->nam
 
 
 Route::prefix('students')->group(function(){
-  Route::get('/manage', 'PagesController@manageStudent');
+  Route::get('/manage', 'StudentController@index');
   Route::get('/assign', 'PagesController@assignStudent');
 
 
