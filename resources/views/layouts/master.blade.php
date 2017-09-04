@@ -6,7 +6,7 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="../../assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>{{ config('app.name', 'MWG Code Academy')}}</title>
+	<title>{{ config('app.name', 'MWG Academy')}}</title>
 
 	<!-- Canonical SEO -->
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -15,6 +15,9 @@
 
      <!-- Bootstrap core CSS     -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <!-- BOOTSTRAP FORM HELPER CSS -->
+	<link rel="stylesheet" href="\assets\css\winmarkltd-BootstrapFormHelpers-d4201db\dist\css\bootstrap-formhelpers.min.css">
 
     <!--  Paper Dashboard core CSS    -->
     <link href="/assets/css/paper-dashboard-v=1.2.1.css" rel="stylesheet"/>
@@ -86,8 +89,9 @@
 	                </div>
 	            </div>
 	            <ul class="nav">
-	                <li class="active">
-	                    <a data-toggle="collapse" href="#dashboardOverview" aria-expanded="true">
+                    <li <?php if($dashoverview == true){
+                        echo 'class="active"'; } ?>> 
+    <a data-toggle="collapse" href="#dashboardOverview" aria-expanded="true">
 	                        <i class="ti-panel"></i>
 	                        <p>Dashboard
                                 <b class="caret"></b>
@@ -101,6 +105,10 @@
 										<span class="sidebar-normal">Overview</span>
 									</a>
 								</li>
+                    
+                    <li <?php if($dashstats == true){
+                        echo 'class="active"';
+                    } ?>>
 								<li>
 									<a href="stats.html">
 										<span class="sidebar-mini">S</span>
@@ -386,6 +394,9 @@
 	<script src="/assets/js/jquery-ui.min.js" type="text/javascript"></script>
 	<script src="/assets/js/perfect-scrollbar.min.js" type="text/javascript"></script>
 	<script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+    
+    <!-- BOOTSTRAP FORM HELPER JS -->
+	<script src="\assets\js\winmarkltd-BootstrapFormHelpers-d4201db\dist\js\bootstrap-formhelpers.js"></script>
 
 	<!--  Forms Validations Plugin -->
 	<script src="/assets/js/jquery.validate.min.js"></script>

@@ -1,3 +1,10 @@
+<?php
+$dashoverview = false;
+$dashstats = true;
+$list = false;
+$notif = false;
+?>
+
 @extends('layouts.default')
 
 @section('content')
