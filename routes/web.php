@@ -22,6 +22,8 @@ Auth::routes();
 
 Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 
+Route::get('/settings', 'HomeController@settings')->name('settings');
+
 Route::get('/user', 'PagesController@student');
 
 Route::get('/profile', 'PagesController@Profile')->name('profile');

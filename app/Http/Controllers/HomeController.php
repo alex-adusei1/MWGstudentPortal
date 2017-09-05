@@ -26,6 +26,11 @@ class HomeController extends Controller
         return view('dashboard');
     }
 
+    public function settings()
+    {
+        return view('pages.settings.index');
+    }
+
     public function student()
     {
         return view('pages.user.student');

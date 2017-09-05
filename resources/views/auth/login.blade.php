@@ -1,63 +1,45 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="wrapper wrapper-full-page">
-    <div class="full-page login-page" data-color="" data-image="/assets/img/background/background-2.jpg">
-    <!--   you can change the color of the filter page using: data-color="blue | azure | green | orange | red | purple" -->
-        <div class="content">
-            <div class="container">
-                <div class="row" style="margin-top:15%;">
-                    <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                      <form method="POST" action="{{ route('login') }}">
-                      {{ csrf_field() }}
-                            <div class="card" data-background="color" data-color="blue">
-                                <div class="card-header">
-                                    <h3 class="card-title"><i class="fa fa-user "></i> Login </h3>
-                                </div>
-                                <div class="card-content">
-                                    <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                        <div class="input-group m-b-sm">
-                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
-                                                    <input type="email" class="form-control" name="email" placeholder="Email" aria-describedby="basic-addon1" value="{{ old('email')}}" required autofocus>
-                                                </div>
-                                        
-                                        @if ($errors->has('email'))
-                                            <span class="help-block">
-                                                <strong>{{ $errors->first('email') }}</strong>
-                                            </span>
-                                        @endif
-                                    </div>
-                                    <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                                        
-                                        <div class="input-group m-b-sm">
-                                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-lock"></i></span>
-                                                    <input type="password" class="form-control" name="password" placeholder="Password" aria-describedby="basic-addon1" value="{{ old('password')}}" required>
-                                                </div>
-                                        @if ($errors->has('password'))
-                                            <span class="help-block">
-                                                <strong>{{ $errors->first('password') }}</strong>
-                                            </span>
-                                        @endif
-
-                                    </div>
-                                </div>
-                                <div class="card-footer text-center">
-
-<!--                                    <div class="checkbox">
-                                      <label>
-                                          <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-                                      </label>
-                                    </div>-->
-
-<button type="submit" class="btn btn-fill btn-wd">Login <i class="fa fa-gear"></i></button>
-<!--                                    <div class="forgot">
-                                        <a href="{{ route('password.request') }}">Forgot your password?</a>
-                                    </div>-->
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+      <section id="content" class="m-t-lg wrapper-md animated fadeInUp">
+        {{-- <a class="nav-brand" style="color:#000; font-size:30px" href="index.html">{{config('app.name')}}</a> --}}
+        <div class="row m-n">
+          <div class="col-md-4 col-md-offset-4 m-t-lg">
+            <section class="panel">
+              <header class="panel-heading text-center">
+                Sign in
+              </header>
+              <form action="{{ route('login') }}" class="panel-body" method="POST">
+                {{ csrf_field() }}
+                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                  <label class="control-label">Email</label>
+                  <input type="email" placeholder="test@example.com" class="form-control" name="email">
+                  @if ($errors->has('email'))
+                      <span class="help-block">
+                          <strong>{{ $errors->first('email') }}</strong>
+                      </span>
+                  @endif
                 </div>
-            </div>
+                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                  <label class="control-label">Password</label>
+                  <input type="password" id="inputPassword" placeholder="Password" name="password" class="form-control">
+                  @if ($errors->has('password'))
+                      <span class="help-block">
+                          <strong>{{ $errors->first('password') }}</strong>
+                      </span>
+                  @endif
+                </div>
+                {{-- <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Keep me logged in
+                  </label>
+                </div> --}}
+                {{-- <a href="#" class="pull-right m-t-xs"><small>Forgot password?</small></a> --}}
+                <button type="submit" class="btn btn-info form-control">SignIN</button>
+                <div class="line line-dashed"></div>
+              </form>
+            </section>
+          </div>
         </div>
+      </section>
 @endsection
