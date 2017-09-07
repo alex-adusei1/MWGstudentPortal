@@ -28,7 +28,7 @@ class HomeController extends Controller
 
     public function settings()
     {
-        return view('pages.settings.index');
+        return view('pages.settings.setting');
     }
 
     public function student()
